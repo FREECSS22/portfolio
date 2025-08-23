@@ -1,0 +1,23 @@
+{
+  "name": "dev-portfolio",
+  "version": "1.0.0",
+  "description": "Welcome to my portfolio repository!  \r This project contains the source code for my personal website, where I showcase my **projects, skills, and experiences** as an aspiring IT professional.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FREECSS22/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FREECSS22/portfolio/issues"
+  },
+  "homepage": "https://github.com/FREECSS22/portfolio#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.7"
+  }
+}
