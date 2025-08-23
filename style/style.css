@@ -12124,3 +12124,31 @@ body {
     min-height: 100vh;
   }
 }
+/* Works on Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px; /* Scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #111; /* Track background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a56bfa; /* Thumb color (purple) */
+  border-radius: 10px; /* Rounded edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8a4de8; /* Slightly darker purple on hover */
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #a56bfa #111; /* Thumb | Track */
+}
+
+/* Hide scrollbar arrows */
+::-webkit-scrollbar-button {
+  display: none;
+}
