@@ -2,14 +2,7 @@
 // Option A: Include all of Bootstrap
 
 $primary: #a56bfa;
-
-// Global CSS vars
-:root {
-    --bs-body-bg: hsl(0, 0%, 11.8%);   /* page background */
-    --bs-body-color: #f8f9fa;          /* light text */
-    --background-elevated: 0, 0%, 16%; /* hsl values only */
-    --background-card: 0, 0%, 20%;
-}
+$secondary: #1a1a1a;
 
 // Bootstrap import
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -124,14 +117,6 @@ body {
     }
 }
 
-// Section Elevated
-.section-elevated {
-    background-color: hsl(var(--background-elevated));
-    color: var(--bs-body-color);
-    padding: 2rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-}
-
 .skills-section {
     padding: 60px 0;
     text-align: center;
@@ -167,6 +152,11 @@ body {
     display: inline-block;
     font-size: 0.9rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.hover-bg-primary:hover {
+    background-color: #a56bfa !important; /* purple accent */
+    color: #111 !important; /* dark text on hover */
 }
 
 @media (max-width: 500px) {
