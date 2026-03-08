@@ -12143,3 +12143,73 @@ body {
 ::-webkit-scrollbar-button {
   display: none;
 }
+
+.project-card {
+  background: #1c1c1c;
+  box-shadow: 0 0 20px rgba(165, 107, 250, 0.15);
+}
+
+.contact-card {
+  background: #111;
+  box-shadow: 0 0 20px rgba(165, 107, 250, 0.15);
+}
+
+.contact-icon {
+  background: #a56bfa;
+  width: 45px;
+  height: 45px;
+}
+
+.social-pill {
+  width: 42px;
+  height: 42px;
+  background: #111;
+  color: #a56bfa;
+  text-decoration: none;
+}
+
+.contact-form-wrapper {
+  background: #111;
+  box-shadow: 0 0 20px rgba(165, 107, 250, 0.15);
+}
+
+.form-input-dark {
+  background: #222;
+  color: #fff;
+}
+
+.form-input-dark::-moz-placeholder {
+  color: #bbb;
+}
+
+.form-input-dark::placeholder {
+  color: #bbb;
+}
+
+.contact-submit-btn {
+  background: #a56bfa;
+  color: #fff;
+  border: none;
+}
+
+.footer-main {
+  background: #111;
+  color: #fff;
+}
+
+.footer-social-link {
+  width: 40px;
+  height: 40px;
+  background: #1c1c1c;
+  color: #a56bfa;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-link {
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: #a56bfa !important;
+}
