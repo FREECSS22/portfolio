@@ -33,6 +33,13 @@
 
     const projectData = [
         {
+            title: 'CRUD',
+            description: 'A clean CRUD demo focused on solid UI/UX patterns for create, read, update, and delete workflows.',
+            publish: 'June 2025',
+            image: 'assets/CRUD.png',
+            link: 'https://simpledemocrud.vercel.app'
+        },
+        {
             title: 'KME Landing Page',
             description: 'A modern landing page built for KME Design and Constructions, showcasing construction projects with Tailwind UI.',
             publish: 'September 2025',
