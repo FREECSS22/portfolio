@@ -12050,10 +12050,40 @@ body {
   border-radius: 50%;
   border: 4px solid #a56bfa;
   box-shadow: 0 0 25px rgba(165, 107, 250, 0.7);
-  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, opacity 0.35s ease;
 }
 .profile-img:hover {
   transform: scale(1.05);
+}
+
+.profile-swap {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+}
+
+.profile-swap .profile-img {
+  position: absolute;
+  inset: 0;
+}
+
+.profile-img-primary {
+  opacity: 1;
+}
+
+.profile-img-hover {
+  opacity: 0;
+}
+
+.profile-swap:hover .profile-img-primary {
+  opacity: 0;
+  transform: scale(1.02);
+}
+
+.profile-swap:hover .profile-img-hover {
+  opacity: 1;
+  transform: scale(1.02);
 }
 
 .social-icons a {

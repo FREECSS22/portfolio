@@ -51,7 +51,9 @@
                     <p class="mb-4 text-white">Passionate about creating innovative web solutions with modern technologies. I bring ideas to life through clean code and beautiful user experiences.</p>
                     <nav class="d-flex flex-wrap mb-4" style="gap: 1rem;">
                         <a href="#projects" class="btn btn-gradient btn-lg me-2">View My Work <i class="bi bi-arrow-down ms-1"></i></a>
-                        <a href="assets/Rivera, John Luie - Resume.pdf" download class="btn btn-outline-dark btn-lg"><i class="bi bi-download me-1"></i> Download CV</a>
+                        <button type="button" class="btn btn-outline-dark btn-lg" data-bs-toggle="modal" data-bs-target="#cvModal">
+                            <i class="bi bi-download me-1"></i> Download CV
+                        </button>
                     </nav>
                     <aside class="social-icons">
                         <a href="https://github.com/FREECSS22"><i class="bi bi-github"></i></a>
@@ -63,7 +65,10 @@
 
                 <!-- Profile Image -->
                 <figure class="col-lg-5 text-center mt-5 mt-lg-0" data-aos="fade-left">
-                    <img src="assets/IMG_20250328_183040_029.jpg" alt="Profile picture of John Luie Rivera" class="profile-img">
+                    <div class="profile-swap">
+                        <img src="assets/IMG_20250328_183040_029.jpg" alt="Profile picture of John Luie Rivera" class="profile-img profile-img-primary">
+                        <img src="assets/Rivera, John Luie - Remini Formal attire 1x1.png" alt="Formal portrait of John Luie Rivera" class="profile-img profile-img-hover">
+                    </div>
                 </figure>
             </div>
         </div>
@@ -403,6 +408,29 @@
             </div>
         </div>
     </footer>
+
+    <!-- CV Download Modal -->
+    <div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-secondary text-white border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="cvModalLabel">Choose Resume Type</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-3">Which version would you like to download?</p>
+                    <div class="d-grid gap-2">
+                        <a href="assets/Rivera, John Luie - Resume.pdf" download class="btn btn-gradient">
+                            <i class="bi bi-file-earmark-person me-2"></i> CV
+                        </a>
+                        <a href="assets/ATS FRIENDLY RESUME.pdf" download class="btn btn-outline-light">
+                            <i class="bi bi-file-earmark-text me-2"></i> ATS Friendly Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="index.js"></script>
